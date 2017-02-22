@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                        Facepunch Fixer
 // @author                      Xyrec
-// @version                     3.1
+// @version                     3.2
 // @description                 Adds a link to the ticker, gets rid of huge usertitles, splits the front page into two columns instead of one.
 // @updateURL                   https://github.com/Xyrec/Facepunch-Fixer/master/Facepunch_Fixer.user.js
 // @downloadURL                 https://github.com/Xyrec/Facepunch-Fixer/master/Facepunch_Fixer.user.js
@@ -38,6 +38,12 @@ $(function() {
 
 $(function() {
     $("#cat413").appendTo($("<td valign='left' class='FrontPageForums'></td>").insertAfter("#cat3"));
+});
+
+// Minor edits to frontpage
+
+$(function() {
+    $("center").children("p:first").hide();
 });
 
 // Usertitle Fix, Remove everything below this line to get huge usertitles back
