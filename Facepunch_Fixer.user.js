@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                        Facepunch Fixer
 // @author                      Xyrec
-// @version                     3.2.1
+// @version                     3.3
 // @description                 Adds a link to the ticker, gets rid of huge usertitles, splits the front page into two columns instead of one.
 // @updateURL                   https://raw.githubusercontent.com/Xyrec/Facepunch-Fixer/master/Facepunch_Fixer.user.js
 // @downloadURL                 https://raw.githubusercontent.com/Xyrec/Facepunch-Fixer/master/Facepunch_Fixer.user.js
@@ -44,6 +44,17 @@ $(function() {
 
 $(function() {
     $("center").children("p:first").hide();
+});
+
+// Blue bar fix
+
+$(function() {
+    $("#footer_copyright").hide();
+    $("#footer_morecopyright").hide();
+    $("#footer").css({background:"rgba(0,0,0,0)",margin:"0"});
+    $("#footer a").css("color","#444");
+    $("#footer #fps_copyright").css({fontSize:"12px",color:"#444"});
+    $("#footer .footer_links").css({color:"#444"});
 });
 
 // Usertitle Fix, Remove everything below this line to get huge usertitles back
