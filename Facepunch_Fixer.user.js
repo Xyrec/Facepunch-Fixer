@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                        Facepunch Fixer
 // @author                      Xyrec
-// @version                     3.3
+// @version                     3.3.1
 // @description                 Adds a link to the ticker, gets rid of huge usertitles, splits the front page into two columns instead of one.
 // @updateURL                   https://raw.githubusercontent.com/Xyrec/Facepunch-Fixer/master/Facepunch_Fixer.user.js
 // @downloadURL                 https://raw.githubusercontent.com/Xyrec/Facepunch-Fixer/master/Facepunch_Fixer.user.js
@@ -37,7 +37,7 @@ $(function() {
 });
 
 $(function() {
-    $("#cat413").appendTo($("<td valign='left' class='FrontPageForums'></td>").insertAfter("#cat3"));
+    $("#cat197").appendTo($("<td valign='left' class='FrontPageForums'></td>").insertAfter("#cat3"));
 });
 
 // Minor edits to frontpage
@@ -49,11 +49,10 @@ $(function() {
 // Blue bar fix
 
 $(function() {
-    $("#footer_copyright").hide();
-    $("#footer_morecopyright").hide();
-    $("#footer").css({background:"rgba(0,0,0,0)",margin:"0"});
+    $("#footer").css({background:"rgba(0,0,0,0)",margin:"0",padding:"0"});
     $("#footer a").css("color","#444");
-    $("#footer #fps_copyright").css({fontSize:"12px",color:"#444"});
+    $("#footer #content_pad").css({paddingTop:"5px",paddingBottom:"5px"});
+    $("#footer #fps_copyright").css({color:"#444"});
     $("#footer .footer_links").css({color:"#444"});
 });
 
