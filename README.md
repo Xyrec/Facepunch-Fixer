@@ -1,2 +1,2 @@
 # Facepunch-Fixer
-This is a userscript for Tampermonkey or similar that improves certain things on facepunch.com.
+This is a userscript for facepunch.com that fixes certain annoying quirks and makes the website more usable.
