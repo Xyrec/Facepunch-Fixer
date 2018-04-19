@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                        Facepunch Fixer
 // @author                      Xyrec
-// @version                     3.3.2
+// @version                     3.4
 // @description                 Adds a link to the ticker, gets rid of huge usertitles, splits the front page into two columns instead of one.
 // @updateURL                   https://raw.githubusercontent.com/Xyrec/Facepunch-Fixer/master/Facepunch_Fixer.user.js
 // @downloadURL                 https://raw.githubusercontent.com/Xyrec/Facepunch-Fixer/master/Facepunch_Fixer.user.js
@@ -10,6 +10,8 @@
 // @include                     https://www.facepunch.com/*
 // @include                     https://facepunch.com/*
 // ==/UserScript==
+
+window.location.replace("https://forum.facepunch.com/f/");
 
 // Ticker Link
 
